@@ -18,7 +18,6 @@ A linguagem Lumen é case-sensitive e usa alfabeto ASCII. Identificadores, palav
 ```text
 analisador_lexico/
 ├── especificacao-lexica.md
-├── relatorio-implementacao-checklist.docx
 ├── automatos/
 │   ├── afd-identificador.svg
 │   ├── afd-string.svg
@@ -75,3 +74,5 @@ Cada token é impresso como `TIPO('lexema') @ linha:coluna`. Erros léxicos são
 - A implementação mantém a lista de erros para que os testes possam verificar posição e recuperação.
 
 Os desenhos em [automatos/](automatos/) documentam os estados de identificadores e strings. A saída da validação está em [test/evidencia-execucao.txt](test/evidencia-execucao.txt).
+
+O relatório explicativo é entregue separadamente e não integra os arquivos atuais deste repositório.
