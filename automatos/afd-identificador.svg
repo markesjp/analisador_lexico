@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">AFD de identificador e palavra reservada</title>
+  <desc id="desc">START vai para ID_BODY com letra ASCII ou sublinhado. ID_BODY repete com letra, dígito ou sublinhado e aceita identificador ao encontrar outro caractere ou EOF. Depois a tabela de palavras reservadas classifica o lexema.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#25344a"/></marker></defs>
+  <rect width="1000" height="300" fill="#fff"/>
+  <text x="40" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#182334">Identificador e palavra reservada</text>
+  <circle cx="125" cy="160" r="53" fill="#e8f0fc" stroke="#25344a" stroke-width="3"/>
+  <text x="125" y="168" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">START</text>
+  <circle cx="490" cy="160" r="68" fill="#e9f7f1" stroke="#25344a" stroke-width="3"/>
+  <text x="490" y="168" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">ID_BODY</text>
+  <circle cx="850" cy="160" r="68" fill="#fff2dc" stroke="#25344a" stroke-width="3"/>
+  <circle cx="850" cy="160" r="60" fill="none" stroke="#25344a" stroke-width="2"/>
+  <text x="850" y="154" text-anchor="middle" font-family="Arial" font-size="14" fill="#182334">ACCEPT_</text>
+  <text x="850" y="173" text-anchor="middle" font-family="Arial" font-size="14" fill="#182334">IDENTIFIER</text>
+  <path d="M178,160 L418,160" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="298" y="142" text-anchor="middle" font-family="Arial" font-size="16" fill="#182334">[A-Za-z_]</text>
+  <path d="M490,92 C415,18 565,18 490,92" fill="none" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="490" y="56" text-anchor="middle" font-family="Arial" font-size="16" fill="#182334">[A-Za-z0-9_]</text>
+  <path d="M558,160 L775,160" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="665" y="142" text-anchor="middle" font-family="Arial" font-size="16" fill="#182334">outro ou EOF</text>
+  <text x="850" y="260" text-anchor="middle" font-family="Arial" font-size="15" fill="#182334">consulta tabela KEYWORDS</text>
+</svg>

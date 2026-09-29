@@ -1,0 +1,23 @@
+Evidência de execução — 29/09/2026
+
+Ambiente: JDK 21.0.9.0, Windows.
+
+Comandos executados na raiz do projeto:
+
+  javac -Xlint:all -d out src/scanner/*.java test/ScannerTest.java
+  java -cp out ScannerTest
+  java -cp out scanner.Main examples/programa.lumen
+
+Resultado da compilação: código de saída 0, sem avisos.
+Resultado da suíte de testes:
+
+  Todos os testes passaram.
+
+Resultado do exemplo: código de saída 0, sem erros léxicos.
+Trecho final da saída:
+
+  INTEGER_LITERAL('0') @ 18:17
+  DELIMITER(';') @ 18:18
+  DELIMITER('}') @ 19:5
+  DELIMITER('}') @ 20:1
+  EOF('') @ 21:1

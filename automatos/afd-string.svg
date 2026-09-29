@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="330" viewBox="0 0 1120 330" role="img" aria-labelledby="title desc">
+  <title id="title">AFD de string</title>
+  <desc id="desc">Após aspas iniciais, STRING_BODY consome ASCII permitido. Barra invertida leva a ESCAPE, que aceita escapes definidos e retorna a STRING_BODY. Aspas finais levam a ACCEPT_STRING. Quebra de linha e EOF são erros.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#25344a"/></marker></defs>
+  <rect width="1120" height="330" fill="#fff"/>
+  <text x="40" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="#182334">String</text>
+  <circle cx="120" cy="160" r="50" fill="#e8f0fc" stroke="#25344a" stroke-width="3"/>
+  <text x="120" y="168" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">START</text>
+  <circle cx="420" cy="160" r="66" fill="#e9f7f1" stroke="#25344a" stroke-width="3"/>
+  <text x="420" y="168" text-anchor="middle" font-family="Arial" font-size="16" fill="#182334">STRING_BODY</text>
+  <circle cx="720" cy="160" r="59" fill="#e8f0fc" stroke="#25344a" stroke-width="3"/>
+  <text x="720" y="168" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">ESCAPE</text>
+  <circle cx="1000" cy="160" r="67" fill="#fff2dc" stroke="#25344a" stroke-width="3"/>
+  <circle cx="1000" cy="160" r="59" fill="none" stroke="#25344a" stroke-width="2"/>
+  <text x="1000" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="#182334">ACCEPT_</text>
+  <text x="1000" y="173" text-anchor="middle" font-family="Arial" font-size="14" fill="#182334">STRING</text>
+  <path d="M170,160 L345,160" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="258" y="142" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">aspas iniciais</text>
+  <path d="M420,94 C345,18 495,18 420,94" fill="none" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="420" y="58" text-anchor="middle" font-family="Arial" font-size="16" fill="#182334">ASCII comum</text>
+  <path d="M486,160 L651,160" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="570" y="142" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">barra invertida</text>
+  <path d="M720,219 C680,300 465,300 420,226" fill="none" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="570" y="292" text-anchor="middle" font-family="Arial" font-size="15" fill="#182334">escape válido: aspas, barra, n, r, t</text>
+  <path d="M486,108 C690,17 935,50 977,94" fill="none" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="744" y="64" text-anchor="middle" font-family="Arial" font-size="17" fill="#182334">aspas finais</text>
+  <text x="420" y="253" text-anchor="middle" font-family="Arial" font-size="15" fill="#a12626">quebra de linha ou EOF → erro</text>
+</svg>
